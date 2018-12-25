@@ -11,7 +11,7 @@ DateTime <- strptime(paste(Data$Date,Data$Time),"%d/%m/%Y %H:%M:%S")
 Data2 <- Data[,names(Data)!="Date" & names(Data)!="Time"]
 Data3 <- data.frame(DateTime,Data2)
 
-## plot 2: scatter plot on Global_active_power and add lines
+## plot 2: lines on (DateTime,Global_active_power)
 png(filename = "plot2.png", width = 480, height = 480, units = "px", bg="transparent")
  # Note bg="transparent" set the background color as transparent
 
