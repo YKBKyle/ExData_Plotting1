@@ -11,7 +11,7 @@ DateTime <- strptime(paste(Data$Date,Data$Time),"%d/%m/%Y %H:%M:%S")
 Data2 <- Data[,names(Data)!="Date" & names(Data)!="Time"]
 Data3 <- data.frame(DateTime,Data2)
 
-## plot 3: 
+## plot 3: multiple lines on one plot
 LinePlot <- function(x, y, col, xlab=NA, ylab=NA, type="l"){
     plot(x, y, col=col, xlab=xlab, ylab=ylab, type=type,
          ylim=range(Data3[,c("Sub_metering_1","Sub_metering_2","Sub_metering_3")]))
