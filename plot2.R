@@ -20,6 +20,4 @@ plot(Data3$DateTime, Data3$Global_active_power,
      ylab = "Global Active Power (kilowatts)",
      type = "l")
 
-#lines(Data3$DateTime, Data3$Global_active_power)
-
 dev.off()
